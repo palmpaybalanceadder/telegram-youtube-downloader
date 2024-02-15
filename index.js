@@ -14,7 +14,7 @@ const fs = require("fs");
 require("dotenv").config();
 
 // Replace YOUR_BOT_TOKEN with your actual bot token
-const token = process.env.B("6586327242:AAGpN8zwtM78D8hg7Ph1qvTN0FFNbb4KAuU");
+const token = process.env.B("6240222799:AAGE0IMInZD6gbJgBRDSopI8JK2m0T8bd3o");
 
 // Create a bot instance
 const bot = new TelegramBot(token, { polling: true });
@@ -60,7 +60,7 @@ async function downloadVideo(chatId, url) {
       clearInterval(updateInterval); // stop updating the message
       bot
         .sendVideo(chatId, `${title}-${chatId}.mp4`, {
-          caption: `*Video downloaded:* ${title} "by" @RX_OuO ✅`,
+          caption: `*Video downloaded:* ${title} "by" @indianibhoi ✅`,
           thumb: thumbnailUrl,
           duration: videoInfo.videoDetails.lengthSeconds,
           parse_mode: "Markdown",
@@ -98,7 +98,7 @@ bot.onText(/\/start/, (msg) => {
   // Send a message with the introduction and instructions
   bot.sendMessage(
     chatId,
-    `Hey, I am RX YOUTUBE DOWNLØADER made by @RX_OuO. Use the following commands to use me! 
+    `Hey, I am YOUTUBE DOWNLØADER made by @indianibhoi. Use the following commands to use me! 
 
 /yt - Give any youtube link and the bot will download it for you.`
   );
